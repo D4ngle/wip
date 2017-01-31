@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Einstellungen</string>
+    <string name="cardview_image_content_description">Ein Foto der Location</string>
+    <string name="voucher_details_image_content_description">Ein Foto der Location</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_favorite"
+        android:icon="@drawable/ic_menu_favorite"
+        app:showAsAction="ifRoom"
+        android:title="Als Favorit speichern">
+    </item>
+
+    <item
+        android:id="@+id/details_menu_action_navigate"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_menu_navigate"
+        android:title="Routenplaner"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/details_menu_action_call"
+        android:orderInCategory="2"
+        android:title="Anrufen"
+        android:icon="@drawable/ic_menu_call"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_share"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_menu_share"
+        app:showAsAction="never"
+        android:title="Teilen">
+    </item>
+
+    <item
+        android:id="@+id/menu_complain"
+        android:orderInCategory="4"
+        android:icon="@drawable/ic_menu_complain"
+        app:showAsAction="never"
+        android:title="Problem melden">
+    </item>
+</menu>

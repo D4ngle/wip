@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/location_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="bottom"
+            app:cardElevation="16dp">
+
+            <ImageView
+                android:id="@+id/voucher_details_image"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bar_h"
+                />
+
+            <TextView
+                android:id="@+id/voucher_details_image_locked"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="80sp"
+                android:text="Gesperrt"
+                android:visibility="gone"
+                android:textColor="@color/brave_orange_700"
+                />
+
+            <TextView
+                android:id="@+id/voucher_details_image_used"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="80sp"
+                android:text="Verbraucht"
+                android:textColor="@color/night_grey_300"
+                android:visibility="gone"
+                android:background="@color/black_reduced_alpha"
+                />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/voucher_details_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:paddingTop="24dp"
+                app:contentInsetEnd="0dp"
+                app:contentInsetStart="0dp"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/MyToolbar"
+                android:background="@drawable/background_translucent_asc" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginTop="72dp"
+                android:background="@drawable/background_fading_asc"
+                />
+
+                <TextView
+                    android:id="@+id/voucher_details_location_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingLeft="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="2dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:textSize="16sp"
+                    android:background="@drawable/background_translucent_desc"
+                    android:textColor="@color/white"
+                    android:text="Galopper des Jahres"
+                    />
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/info_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        >
+        <!--MarginTop ist abhängig von der Höhe von location_cardview-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/location_cardview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+        <include layout="@layout/info_section" />
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/redeemVoucherButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_anchor="@id/info_section"
+        app:layout_anchorGravity="top|end"
+        app:srcCompat="@drawable/ic_fab_redeem"
+        app:backgroundTint="@color/colorAccent"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/purchaseMoreButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_anchor="@id/info_section"
+        app:layout_anchorGravity="top|end"
+        app:srcCompat="@drawable/ic_menu_purchase"
+        app:backgroundTint="@color/colorAccent"
+        android:visibility="gone"
+        />
+</android.support.design.widget.CoordinatorLayout>

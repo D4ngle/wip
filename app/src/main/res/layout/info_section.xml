@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_voucher_details_under">
+
+    <TextView
+        android:id="@+id/voucher_details_deal_description"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start|center"
+        android:text="Wenn du ein Bier kaufst musst du bloß das Doppelte zahlen! Wie Geil is das denn? Mega!"
+        android:textSize="18sp" />
+
+    <!--android:drawableLeft="@drawable/ic_deal"-->
+    <!--android:drawablePadding="8dp"-->
+    <!--android:drawableStart="@drawable/ic_deal"-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#32000000" />
+
+    <LinearLayout
+        android:id="@+id/location_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/voucher_details_location_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_name"
+            android:gravity="start|center"
+            android:text="Bar"
+            android:textSize="16sp" />
+        <!--Iconmöglichkeiten:-->
+        <!--Messer/Gabel - Cocktailglas - Bierglas - Sofa - Tanzende Leute? -->
+
+        <LinearLayout
+            android:id="@+id/yelp_ratings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/price_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_price_filled" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-4dp"
+                    android:src="@drawable/ic_price_filled" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-4dp"
+                    android:src="@drawable/ic_price_empty" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-4dp"
+                    android:src="@drawable/ic_price_empty" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="start|center"
+                android:text="Yelp: "
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/yelp_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_rating_filled" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_rating_filled" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_rating_filled" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_rating_empty" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_rating_empty" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/voucher_details_seats"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_seats"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_seats"
+        android:gravity="start|center"
+        android:text="12 Thekenplätze"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/voucher_details_music"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_music"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_music"
+        android:gravity="start|center"
+        android:text="Rock'n Roll"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/voucher_details_age"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_age"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_age"
+        android:gravity="start|center"
+        android:text="Zielgruppe 18-21 21-35 35-45 45+"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#32000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/voucher_details_opening"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:drawableLeft="@drawable/ic_opening"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_opening"
+            android:gravity="start|center"
+            android:text="Geöffnet bis 16:00"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/voucher_details_opening_times"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:drawableEnd="@drawable/ic_more"
+            android:drawableRight="@drawable/ic_more"
+            android:gravity="start|center"
+            android:text="Öffnungszeiten"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/voucher_details_distance"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_distance"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_distance"
+        android:gravity="start|center"
+        android:text="3.7km entfernt"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="#32000000" />
+
+    <LinearLayout
+        android:id="@+id/benefits_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/benefits_divider"
+            android:gravity="center_vertical"
+            android:showDividers="middle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" TV "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" KICKER "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" BILLARD "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" DART "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" SOFA "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" BAND "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" DJ "
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:divider="@drawable/benefits_divider"
+            android:gravity="start|center"
+            android:showDividers="middle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" RAUCHER "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" ESSEN "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" HAPPYHOUR "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" COCKTAILS "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" SNACKS "
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/benefits_divider"
+            android:showDividers="middle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" LGBT "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" TIERFREUNDE "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_background"
+                android:fontFamily="sans-serif-black"
+                android:text=" BARRIEREFREI "
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/validity_date"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:gravity="bottom|end"
+        android:text="Noch bis zum 31.12.2017"
+        android:textSize="12sp" />
+</LinearLayout>
