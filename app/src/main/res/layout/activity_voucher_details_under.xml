@@ -24,7 +24,7 @@
                 android:scaleType="centerCrop"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/bar_h"
+                android:src="@drawable/bar1"
                 />
 
             <TextView
@@ -32,7 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="80sp"
+                android:textSize="64sp"
                 android:text="Gesperrt"
                 android:visibility="gone"
                 android:textColor="@color/brave_orange_700"
@@ -43,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="80sp"
+                android:textSize="64sp"
                 android:text="Verbraucht"
                 android:textColor="@color/night_grey_300"
                 android:visibility="gone"

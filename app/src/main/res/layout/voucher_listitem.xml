@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:paddingBottom="12dp"
-    android:paddingLeft="16dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="0dp"
     android:paddingRight="16dp"
-    android:paddingTop="12dp">
+    android:paddingTop="8dp">
 
     <RelativeLayout
         android:id="@+id/info_container"
@@ -20,7 +20,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/bar_h" />
+            android:src="@drawable/bar1" />
 
         <TextView
             android:id="@+id/cardview_deal_description"
@@ -36,7 +36,6 @@
             android:text="Bier "
             android:textSize="16sp"
             android:textColor="@color/colorPrimaryDark"
-            android:layout_marginTop="-4dp"
             />
 
         <LinearLayout
@@ -84,13 +83,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/cardview_image"
-            android:layout_toEndOf="@+id/cardview_image"
             android:layout_toLeftOf="@+id/cardview_distance"
-            android:layout_toRightOf="@+id/cardview_image"
             android:layout_toStartOf="@+id/cardview_distance"
+            android:layout_toRightOf="@+id/cardview_image"
+            android:layout_toEndOf="@+id/cardview_image"
             android:lines="1"
+            android:layout_marginBottom="4dp"
             android:text="Galopper des Jahres"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            />
 
         <TextView
             android:id="@+id/cardview_distance"
@@ -103,6 +104,7 @@
             android:layout_marginStart="16dp"
             android:lines="1"
             android:text="55.55km"
+            android:layout_marginBottom="4dp"
             android:textSize="14sp" />
 
         <ImageView
@@ -114,7 +116,7 @@
             android:layout_alignTop="@+id/cardview_deal_description"
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="0dp"
             android:src="@drawable/ic_no_favorite" />
 
     </RelativeLayout>

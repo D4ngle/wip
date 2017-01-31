@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tagTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/benefits_background_2"
+    android:paddingTop="2dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="9dp"
+    android:paddingStart="9dp"
+    android:paddingRight="9dp"
+    android:paddingEnd="9dp"
+    android:text="Barrierefrei"
+    android:textColor="@color/night_grey_600"
+    android:textSize="12sp" />
+    <!--android:fontFamily="sans-serif-smallcaps"-->
